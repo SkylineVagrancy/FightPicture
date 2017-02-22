@@ -7,3 +7,8 @@
 /build
 /captures
 .externalNativeBuild
+
+.idea/compiler.xml
+.idea/
+.idea/copyright/profiles_settings.xml
+.apk
