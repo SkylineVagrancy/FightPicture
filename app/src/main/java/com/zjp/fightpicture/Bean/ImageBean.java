@@ -1,4 +1,4 @@
-package com.zjp.fightpicture;
+package com.zjp.fightpicture.Bean;
 
 import cn.bmob.v3.BmobObject;
 

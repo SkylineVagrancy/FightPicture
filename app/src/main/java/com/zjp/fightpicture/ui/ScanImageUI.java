@@ -1,4 +1,4 @@
-package com.zjp.fightpicture;
+package com.zjp.fightpicture.ui;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,7 +6,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.transition.Transition;
 import android.transition.TransitionValues;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -15,13 +14,13 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.zjp.fightpicture.Bean.Relation;
+import com.zjp.fightpicture.R;
+import com.zjp.fightpicture.util.ShareUtils;
 
 import java.text.SimpleDateFormat;
 
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
-import uk.co.senab.photoview.PhotoView;
-import uk.co.senab.photoview.PhotoViewAttacher;
 
 /**
  * Created by pzh on 2017/2/14.

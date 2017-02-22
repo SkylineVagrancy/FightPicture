@@ -1,6 +1,6 @@
-package com.zjp.fightpicture;
+package com.zjp.fightpicture.Bean;
 
-import android.media.Image;
+import com.zjp.fightpicture.Bean.ImageBean;
 
 import java.util.List;
 

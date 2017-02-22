@@ -1,4 +1,6 @@
-package com.zjp.fightpicture;
+package com.zjp.fightpicture.net;
+
+import com.zjp.fightpicture.Bean.ResultBean;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

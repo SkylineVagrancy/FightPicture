@@ -1,4 +1,4 @@
-package com.zjp.fightpicture;
+package com.zjp.fightpicture.util;
 
 import android.app.Activity;
 import android.content.Context;
@@ -17,6 +17,7 @@ import com.tencent.mm.opensdk.modelmsg.WXVideoObject;
 import com.tencent.mm.opensdk.modelmsg.WXWebpageObject;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
+import com.zjp.fightpicture.R;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
