@@ -18,6 +18,7 @@ import com.tencent.mm.opensdk.modelmsg.WXWebpageObject;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 import com.zjp.fightpicture.R;
+import com.zjp.fightpicture.common.AppConfig;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class ShareUtils {
 
     public static boolean isWeiXinInstallAndSupport(Context context) {
         boolean flag = false;
-        IWXAPI api = WXAPIFactory.createWXAPI(context, "wxe6bc4012b43c1255", false);
+        IWXAPI api = WXAPIFactory.createWXAPI(context, AppConfig.WX_ID, false);
         if (api.isWXAppInstalled() && api.isWXAppSupportAPI()) {
             flag = true;
         }
@@ -47,7 +48,7 @@ public class ShareUtils {
      * @param url     跳转url
      */
     public static void shareToWeChat(Context context, int type, String title, String url) {
-        IWXAPI api = WXAPIFactory.createWXAPI(context, "wxe6bc4012b43c1255", false);
+        IWXAPI api = WXAPIFactory.createWXAPI(context, AppConfig.WX_ID, false);
         Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_launcher);
         Bitmap thumbBmp = Bitmap.createScaledBitmap(bitmap, 150, 150, true);
         bitmap.recycle();
@@ -67,7 +68,7 @@ public class ShareUtils {
     }
 
     public static void shareBitmapToWechat(Context context, int type, byte[] bitmap) {
-        IWXAPI api = WXAPIFactory.createWXAPI(context, "wxe6bc4012b43c1255", false);
+        IWXAPI api = WXAPIFactory.createWXAPI(context, AppConfig.WX_ID, false);
         WXEmojiObject imageObject = new WXEmojiObject(bitmap);
 //        WXImageObject imageObject = new WXImageObject(bitmap);
         WXMediaMessage msg = new WXMediaMessage();

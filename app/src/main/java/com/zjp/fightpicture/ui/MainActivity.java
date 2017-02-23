@@ -25,6 +25,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.zjp.fightpicture.Bean.ImageBean;
 import com.zjp.fightpicture.Bean.Tag;
+import com.zjp.fightpicture.common.AppConfig;
 import com.zjp.fightpicture.net.NetServer;
 import com.zjp.fightpicture.R;
 import com.zjp.fightpicture.Bean.ResultBean;
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity
 
         setSupportActionBar(toolbar);//使活动支持ToolBar
 
-        Bmob.initialize(this, "ab51268ea86197487f09dac950f4028b");
+        Bmob.initialize(this, AppConfig.BMOB_ID);
 
         mSwipeRefreshWidget = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_widget);
         mRecyclerView = (RecyclerView) findViewById(android.R.id.list);
